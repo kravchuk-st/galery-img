@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Galery</title>
+  <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container header__container">
+      <div class="header__logo">
+        <a href="./">
+          <svg class="icon logo-svg">
+            <use xlink:href="./img/logo.svg#camera"></use>
+          </svg>
+        </a>
+        <h2>Unsplash API</h2>
+      </div>
+      <div class="header__form">
+        <form id="form" method="POST">
+        <input type="text" placeholder="Search..." id="input" autocomplete="off" autofocus>
+          <button class="close btn-reset">
+            <svg class="icon-fill">
+              <use xlink:href="./img/x.svg#close"></use>
+            </svg>
+          </button>
+          <button type="submit" class="search btn-reset">
+            <svg class="icon-fill">
+              <use xlink:href="./img/search.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h3 id="searchQuery"></h3>
+      <div class="flex">
+
+      </div>
+      <div class="more">
+        <button type="button" class="more-btn btn-reset" id="addImg">Load More</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer-left">
+          <p>&copy;&nbsp;2022</p>
+        </div>
+        <div class="footer-center">
+          <a href="https://github.com/kravchuk-st" target="_blank">
+            <img src="./img/github-logo.svg" alt="github_icon">
+          </a>
+        </div>
+        <div class="footer-rigft">
+          <a href="https://rs.school/js/" target="_blank">
+            <img src="./img/rs_school.svg" alt="rs-school-logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
