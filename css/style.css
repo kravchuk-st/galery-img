@@ -155,7 +155,7 @@ header{
   border: 1px solid orange;
   border-radius: 25px;
   transition: all 0.1s ease;
-  animation: pulse 1.5s ease infinite;
+  animation: pulse 1.5s ease-in-out infinite;
 }
 
 .more-btn:hover{
@@ -197,18 +197,12 @@ footer{
   }
 }
 
-@-webkit-keyframes pulse{
-  0% 
-	{
-		-webkit-box-shadow: 0 0 rgba(255,165,0,.6);
-		-moz-box-shadow: 0 0 rgba(255,165,0,.6);
-		box-shadow: 0 0 rgba(255,165,0,.6);
-	}
-	100% 
-	{
-		-webkit-box-shadow: 0 0 0 20px rgba(255,215,0,0);
-		-moz-box-shadow: 0 0 0 20px rgba(255,215,0,0);
-		box-shadow: 0 0 0 20px rgba(255,215,0,0);
-	}   
+@keyframes pulse{
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 165, 0, 0.4); }
+  70% {
+    box-shadow: 0 0 0 20px rgba(222, 114, 45, 0); }
+  100% {
+    box-shadow: 0 0 0 0 rgba(222, 114, 45, 0); }
 }
   
